@@ -1,6 +1,7 @@
 {
     "name": "react-boilerplate",
     "version": "1.0.0",
+    "homepage": "https://nikolakrivokapic.github.io/portfolio/",
     "description": "",
     "main": "index.js",
     "jest": {
@@ -18,7 +19,9 @@
         "test": "jest",
         "test:watch": "jest --watchAll",
         "start": "webpack-dev-server --mode development --open --hot",
-        "build": "webpack --mode production"
+        "build": "webpack --mode production",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
     },
     "author": "",
     "license": "ISC",
@@ -47,6 +50,7 @@
     },
     "dependencies": {
         "axios": "^0.18.0",
+        "gh-pages": "^2.0.1",
         "prop-types": "^15.6.2",
         "react": "^16.6.0",
         "react-dom": "^16.6.0",
