@@ -5,6 +5,7 @@ import {Provider} from 'react-redux';
 import Main from './components/main';
 import Store from './store';
 import Capi from './capi';
+import Preload from 'react-preload';
 
 const transporter = window.simcapi.Transporter;
 
@@ -20,11 +21,25 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function init() {
+    let loadingIndicator = (<div>Loading...</div>);
+    let images = ['../assets/bg.jpg'];
+
     ReactDOM.render(
         <Provider store={Store.configureStore()}>
             <Fragment>
                 <GlobalStyle />
-                <Main />
+
+                <Preload
+                    loadingIndicator={loadingIndicator}
+                    images={images}
+                    autoResolveDelay={3000}
+                    onError={this._handleImageLoadError}
+                    onSuccess={this._handleImageLoadSuccess}
+                    resolveOnError={true}
+                    mountChildren={true}
+                >
+                    <Main />
+                </Preload>
             </Fragment>
         </Provider>,
         document.getElementById('root')
