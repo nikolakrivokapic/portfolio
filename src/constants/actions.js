@@ -7,4 +7,5 @@ export default {
     SET_CARDS: 'Set Cards',
     CHANGE_LOGO_BACKGROUND_COLOR: 'Change Background Color',
     SYNC_FROM_CAPI: 'Sync From Capi',
+    SET_CURRENT_PAGE: 'Set Current Page',
 };

@@ -10,10 +10,12 @@ const transporter = window.simcapi.Transporter;
 
 const GlobalStyle = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+    @import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+    @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
     body {
         padding: 0;
         margin: 0;
-        font-family: Roboto, sans-serif;
+        font-family: 'Pathway Gothic One', sans-serif;
     }
 `;
 
