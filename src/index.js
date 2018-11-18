@@ -4,8 +4,6 @@ import {createGlobalStyle} from 'styled-components';
 import {Provider} from 'react-redux';
 import Main from './components/main';
 import Store from './store';
-import Capi from './capi';
-import Preload from 'react-preload';
 
 const transporter = window.simcapi.Transporter;
 
@@ -21,31 +19,22 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function init() {
-    let loadingIndicator = (<div>Loading...</div>);
-    let images = ['../assets/bg.jpg'];
+    let bg_image = new Image();
 
-    ReactDOM.render(
-        <Provider store={Store.configureStore()}>
-            <Fragment>
-                <GlobalStyle />
-
-                <Preload
-                    loadingIndicator={loadingIndicator}
-                    images={images}
-                    autoResolveDelay={3000}
-                    onError={this._handleImageLoadError}
-                    onSuccess={this._handleImageLoadSuccess}
-                    resolveOnError={true}
-                    mountChildren={true}
-                >
+    bg_image.onload = () => {
+        ReactDOM.render(
+            <Provider store={Store.configureStore()}>
+                <Fragment>
+                    <GlobalStyle />
                     <Main />
-                </Preload>
-            </Fragment>
-        </Provider>,
-        document.getElementById('root')
-    );
+                </Fragment>
+            </Provider>,
+            document.getElementById('root')
+        );
+    };
 
-    Capi.expose(Store);
+    // load the image
+    bg_image.src = '../assets/bg.jpg';
 }
 
 function boot() {
