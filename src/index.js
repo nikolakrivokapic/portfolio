@@ -33,8 +33,7 @@ function init() {
         );
     };
 
-    // load the image
-    bg_image.src = '../assets/bg.jpg';
+    bg_image.src = 'assets/bg.jpg';
 }
 
 function boot() {
