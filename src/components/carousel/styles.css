@@ -1,0 +1,9 @@
+.carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-slider {
+    left: 50%;
+    transform: translateX(-50%);
+}

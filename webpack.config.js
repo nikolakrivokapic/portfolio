@@ -24,7 +24,6 @@ module.exports = {
                     },
                 ],
             },
-
             {
                 test: /\.(jpg|png|gif|svg)$/i,
                 loader: 'file-loader',
@@ -34,6 +33,13 @@ module.exports = {
                     publicPath: 'assets/',
                 },
             },
+            {
+                test: /\.css$/,
+                use: [
+                    { loader: "style-loader" },
+                    { loader: "css-loader" }
+                ]
+            }
         ]
     },
     plugins: [
