@@ -19,8 +19,10 @@ export const TextArea = styled.div`
     text-align: center;
     margin: 0 auto;
     width: 60%;
+    max-width: 700px;
     display: flex;
-    background: white;
+    
+    background: #e1e4e1;
     border-radius: 10px;
     position: relative; 
     @media only screen and (max-width: 767px) {
@@ -37,7 +39,7 @@ export const TextArea = styled.div`
         position: absolute;
         width: 24px;
         height: 24px;
-        background: white;
+        background: #e1e4e1;
         left: 50%;
         bottom: -18px;
         transform: rotate(44deg) translateX(-50%);

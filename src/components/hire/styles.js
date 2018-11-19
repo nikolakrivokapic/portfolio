@@ -15,6 +15,7 @@ export const TextArea = styled.div`
     max-width: 350px;
     padding: 32px;
     font-size: 20px;
+    @media only screen and (max-width: 767px) { font-size: 16px; }
     &::before {
         content: '';
         background-color: #5385bb;
@@ -65,7 +66,8 @@ export const Button = styled.button`
     padding: 7px;
     border: none;
     color: white;
-    font-size: 22px;
+    font-size: 20px;
+    @media only screen and (max-width: 767px) { font-size: 16px; }
     font-family: 'Pathway Gothic One', sans-serif;
     height: 40px;
     cursor: pointer;

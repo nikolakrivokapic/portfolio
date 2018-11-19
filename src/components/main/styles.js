@@ -92,10 +92,6 @@ export const Icon = styled.img`
 `;
 
 export const MenuMobile = styled.div` 
-    @media only screen and (min-width: 768px) {
-        
-    }
-
     text-align: center;
     display: flex;
     justify-content: center;
