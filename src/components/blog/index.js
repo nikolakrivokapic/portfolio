@@ -9,10 +9,8 @@ export class Blog extends Component {
     render() {
         return (
             <Container visible={this.props.visible}>
-                <TextArea><span>Blogpost 1</span>
-                </TextArea>
                 <TextArea>
-                <span>Blogpost 2</span>
+                <span>Coming Soon...</span>
                 </TextArea>
             </Container>
         );

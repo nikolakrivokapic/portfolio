@@ -6,4 +6,50 @@
 .carousel-slider {
     left: 50%;
     transform: translateX(-50%);
+    width: 254px !important;
+    height: 364px !important;
+    overflow: visible !important;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent !important;
+}
+.slider-wrapper {
+    height: 100%;
+    position: absolute;
+}
+ul {
+    height: 100%;
+}
+.control-dots {
+    display: none;
+}
+
+.control-next {
+    right: -50px !important;
+    overflow: visible;
+    opacity: 1 !important;
+
+}
+
+.control-next:before {
+    border-left: 23px solid green !important;
+    border-top: 23px solid transparent !important;
+    border-bottom: 23px solid transparent !important;
+}
+
+.control-prev {
+    left: -50px !important;
+    overflow: visible;
+    opacity: 1 !important;
+
+}
+
+.control-prev:before {
+    border-right: 23px solid green !important;
+    border-top: 23px solid transparent !important;
+    border-bottom: 23px solid transparent !important;
 }
