@@ -9,6 +9,11 @@ export const Container = styled.div`
     color: white;
     background-size: cover;
     padding-top: 20px;
+    animation: fadein 2s;
+    @keyframes fadein {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
 `;
 
 export const BgImage = styled.div` 
