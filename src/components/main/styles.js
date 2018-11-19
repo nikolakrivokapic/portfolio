@@ -80,7 +80,7 @@ export const Icon = styled.img`
 
 export const MenuMobile = styled.div` 
     @media only screen and (min-width: 768px) {
-        display: none;
+        
     }
 
     text-align: center;
@@ -92,7 +92,7 @@ export const MenuMobile = styled.div`
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: rgba(99, 52, 52, 0.7);
+        background-color: #022e3bc4;
         border-radius: 25px;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -112,7 +112,7 @@ export const MenuMobile = styled.div`
     }
 
     li a:hover {
-        background-color: #111;
+        background-color: #022E3B;
         transition: background-color 0.3s ease;
     }
 `;
@@ -121,24 +121,24 @@ export const MenuDesktop = styled.div`
     text-align: center;
     display: none;
     justify-content: center;
-    @media only screen and (min-width: 768px) {
-        display: flex;
-    }
+ 
 `;
 
 export const Flag = styled.div` 
     overflow: visible;
     position: absolute;
     cursor: pointer;
-    font-family: 'Gloria Hallelujah', cursive;
-    background: rgba(99,52,52,0.7);
+font-family: 'Amatic SC', cursive;
+font-family: 'Pathway Gothic One', sans-serif;
+text-transform: uppercase;
+    font-size:34px; background: #022e3bc4;
     border-radius: 10px;
     padding: 0 10px;
     z-index: 2;
     &:nth-child(1) { left: 10%; top: 23%; }
     &:nth-child(2) { left: 27%; top: 10%; }
     &:nth-child(3) { left: 62%; top: 10%; }
-    &:nth-child(4) { left: 83%; top: 10%; }
+    &:nth-child(4) { left: 83%; top: 22%; }
     &:nth-child(5) { left: 85%; top: 12%; }
     &:hover { background: #022E3B; transition: background 0.3s ease; }
     &::before {

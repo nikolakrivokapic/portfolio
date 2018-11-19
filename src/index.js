@@ -10,6 +10,8 @@ const GlobalStyle = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
     @import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
     @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+    @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+    @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Pathway+Gothic+One');
     body {
         padding: 0;
         margin: 0;
