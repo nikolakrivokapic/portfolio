@@ -66,6 +66,13 @@ export const Button = styled.button`
     cursor: pointer;
     border-radius: 10px;
     font-size: 14px;
+    border: none;
+    color: white;
+    margin: 0;
+    height: 40px;
+    margin-top: 31px;
+    font-size: 16px;
+    transform: none;
     transition: background 0.3s ease;
     &:focus { outline: none; }
     &:hover { background: #bac7dd; }
@@ -73,6 +80,7 @@ export const Button = styled.button`
 
 export const Icons = styled.div` 
     text-align: center;
+    background: #000000c4;
 `;
 
 export const Icon = styled.img` 
@@ -133,9 +141,9 @@ export const Flag = styled.div`
     overflow: visible;
     position: absolute;
     cursor: pointer;
-font-family: 'Amatic SC', cursive;
-font-family: 'Pathway Gothic One', sans-serif;
-text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-transform: uppercase;
     font-size:34px; background: #022e3bc4;
     border-radius: 10px;
     padding: 0 10px;

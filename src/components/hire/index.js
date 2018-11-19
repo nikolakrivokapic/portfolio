@@ -20,11 +20,13 @@ export class Hire extends Component {
                     <span>I am available for freelance/contracting work.</span>
                     <br />
                     <span>Write me a message, I want to hear about your project.</span>
-                    <Inputs>
-                        <InputWrapper><Input name="txtSearch" type="text" />Your email</InputWrapper>
-                        <InputWrapper><Input name="txtSearch" type="text" />Message</InputWrapper>
-                    </Inputs>
-                    <Button>Send</Button>
+                    <form action="https://formspree.io/nikolakrivokapic84@gmail.com" method="POST">
+                        <Inputs>
+                            <InputWrapper><Input name="txtSearch" type="text" name="email" />Your email</InputWrapper>
+                            <InputWrapper><Input name="txtSearch" type="text" name="message" />Message</InputWrapper>
+                        </Inputs>
+                        <Button type="submit">Send</Button>
+                    </form>
                 </TextArea>
             </Container>
         );

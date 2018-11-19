@@ -12,7 +12,9 @@ export const TextArea = styled.div`
     border-radius: 10px;
     position: relative; 
     width: 47%;
+    max-width: 350px;
     padding: 32px;
+    font-size: 20px;
     &::before {
         content: '';
         background-color: #5385bb;
@@ -23,12 +25,13 @@ export const TextArea = styled.div`
         top: 0;
         left: 0;
         z-index: -1;
+        border-radius: 10px;
     }
 `;
 
 export const Inputs = styled.div` 
     position: relative;
-    margin: 0 50px;
+    margin: 0 10px;
 `;
 
 
@@ -39,9 +42,11 @@ export const Input = styled.input`
     box-sizing: border-box;
     color: white;
     display: block;
+    font-family: 'Pathway Gothic One', sans-serif;
     font-size: 16px;
     outline: none !important;
     opacity: .6;
+    padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
 `;
@@ -51,14 +56,18 @@ export const InputWrapper = styled.div`
     margin-top: 15px;
 `;
 
-export const Button = styled.div`
-    margin-top: 25px;
+export const Button = styled.button`
+    margin: 25px 0 0 0;
     background: #022e3bc4;
     border-radius: 10px;
-    width: 27%;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    width: 30%;
+    transform: none;
     padding: 7px;
+    border: none;
+    color: white;
+    font-size: 22px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    height: 40px;
     cursor: pointer;
     &:hover { background: #022E3B; }
     transition: background 0.3s ease;
