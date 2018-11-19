@@ -15,14 +15,15 @@ export const Container = styled.div`
 
 export const TextArea = styled.div` 
     &:nth-child(1) { margin-bottom: 25px; }
-    
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     text-align: center;
-        margin: 0 auto;
-        width: 60%;
-        display: flex;
-        background: white;
-        border-radius: 10px;
-        position: relative; 
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    position: relative; 
+    
     span {
         color: #17313c;
         padding: 15px;

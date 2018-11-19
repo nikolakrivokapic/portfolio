@@ -5,8 +5,6 @@ import {Provider} from 'react-redux';
 import Main from './components/main';
 import Store from './store';
 
-const transporter = window.simcapi.Transporter;
-
 const GlobalStyle = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
     @import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
@@ -36,9 +34,4 @@ function init() {
     bg_image.src = 'assets/bg.jpg';
 }
 
-function boot() {
-    transporter.addInitialSetupCompleteListener(init);
-    transporter.notifyOnReady();
-}
-
-document.addEventListener('DOMContentLoaded', boot);
+document.addEventListener('DOMContentLoaded', init);
