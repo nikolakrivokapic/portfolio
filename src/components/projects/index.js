@@ -9,7 +9,7 @@ export class Projects extends Component {
     render() {
         return (
             <Container visible={this.props.visible}>
-                <Gallery/>
+                <Gallery images={require.context('../../assets/projects', false, /\.(png|jpe?g|svg)$/).keys().map((item) => item.replace('./', 'assets/'))}/>
             </Container>
         );
     }

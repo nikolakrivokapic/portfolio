@@ -21,9 +21,11 @@
     height: 100%;
     position: absolute;
 }
+
 ul {
     height: 100%;
 }
+
 .control-dots {
     display: none;
 }
@@ -53,3 +55,6 @@ ul {
     border-top: 23px solid transparent !important;
     border-bottom: 23px solid transparent !important;
 }
+
+.slide > img { background: white; padding: 10px; }
+.thumb > img { background: white; padding: 10px; }

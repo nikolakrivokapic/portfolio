@@ -2,15 +2,15 @@ import styled from 'styled-components';
 import toggleProp from '../../util/style-guide';
 
 export const Container = styled.div` 
-overflow: hidden;
- opacity: ${toggleProp('visible', '1', '0')}; 
- width: ${toggleProp('visible', 'auto', '0')}; 
- min-height: ${toggleProp('visible', '420px', '0')}; 
- height: ${toggleProp('visible', 'auto', '0')}; 
- transition: ${toggleProp('visible', 'opacity 2s ease 0s', 'opacity 2s ease 1.8s')}; 
- div {
-    &:last-child { &::after { display: none; }}
- }
+    overflow: hidden;
+    opacity: ${toggleProp('visible', '1', '0')}; 
+    width: ${toggleProp('visible', 'auto', '0')}; 
+    min-height: ${toggleProp('visible', '420px', '0')}; 
+    height: ${toggleProp('visible', 'auto', '0')}; 
+    transition: ${toggleProp('visible', 'opacity 2s ease 0s', 'opacity 2s ease 1.8s')}; 
+    div {
+        &:last-child { &::after { display: none; }}
+    }
 `;
 
 export const TextArea = styled.div` 
@@ -32,12 +32,11 @@ export const TextArea = styled.div`
     &::after {
         content: '';
         position: absolute;
-    width: 24px;
-    height: 24px;
-    background: white;
-    left: 50%;
-    bottom: -18px;
-    transform: rotate(44deg) translateX(-50%);
-       
+        width: 24px;
+        height: 24px;
+        background: white;
+        left: 50%;
+        bottom: -18px;
+        transform: rotate(44deg) translateX(-50%);
     }
 `;
