@@ -123,8 +123,8 @@ export const Flag = styled.div`
     z-index: 2;
     &:nth-child(1) { left: 10%; top: 23%; }
     &:nth-child(2) { left: 27%; top: 10%; }
-    &:nth-child(3) { left: 62%; top: 8%; }
-    &:nth-child(4) { left: 73%; top: 8%; }
+    &:nth-child(3) { left: 62%; top: 10%; }
+    &:nth-child(4) { left: 73%; top: 10%; }
     &:nth-child(5) { left: 85%; top: 12%; }
     &:hover { background: #022E3B; transition: background 0.3s ease; }
     &::before {
