@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import {createGlobalStyle} from 'styled-components';
 import {Provider} from 'react-redux';
 import Main from './components/main';
+import Loading from './components/loader';
 import Store from './store';
 
 const GlobalStyle = createGlobalStyle`
@@ -18,6 +19,10 @@ const GlobalStyle = createGlobalStyle`
 
 function init() {
     let bg_image = new Image();
+    ReactDOM.render(
+        <Loading />,
+        document.getElementById('root')
+    );
 
     bg_image.onload = () => {
         ReactDOM.render(
