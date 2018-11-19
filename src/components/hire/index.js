@@ -17,7 +17,9 @@ export class Hire extends Component {
         return (
             <Container visible={this.props.visible}>
                 <TextArea>
-                    <span>I am available for freelance/contracting work. Write me a message, I want to hear about your project.</span>
+                    <span>I am available for freelance/contracting work.</span>
+                    <br />
+                    <span>Write me a message, I want to hear about your project.</span>
                     <Inputs>
                         <InputWrapper><Input name="txtSearch" type="text" />Your email</InputWrapper>
                         <InputWrapper><Input name="txtSearch" type="text" />Message</InputWrapper>

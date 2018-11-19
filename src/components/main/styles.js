@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import pin from '../../assets/pin.png';
+import bg from '../../assets/bg.jpg';
 import toggleProp from '../../util/style-guide';
 
 export const Container = styled.div` 
@@ -15,6 +16,7 @@ export const BgImage = styled.div`
     position: fixed;
     top: 0;
     left: 0;
+    background-size: cover;
     width: 100%;
     height 100%;
     font-size: calc(10px + 2vmin);
@@ -35,9 +37,16 @@ export const BgImage = styled.div`
             }
         }
     }; 
-    background-size: cover;
+    
+    @media only screen and (max-width: 767px) {
+        background: url(${bg}); background-size: cover; transform: none;
+    }
+    
     img {
         position: absolute;  width: 140%; height: 140%;
+        @media only screen and (max-width: 767px) {
+            display: none;
+        }
     }
 `;
 

@@ -23,7 +23,9 @@ export const TextArea = styled.div`
     background: white;
     border-radius: 10px;
     position: relative; 
-    
+    @media only screen and (max-width: 767px) {
+        width: 85%;
+    }
     span {
         color: #17313c;
         padding: 15px;
