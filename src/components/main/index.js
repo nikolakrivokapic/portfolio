@@ -29,6 +29,13 @@ export class MainComponent extends Component {
         this.props.setCurrentPage(page);
     }
 
+    redirectTo(page) {
+        window.open(
+            page,
+            '_blank'
+        );
+    }
+
     render() {
         return (
             <Container>
@@ -37,9 +44,9 @@ export class MainComponent extends Component {
                 </BgImage>
                 <Profile src={profile} />
                 <Icons>
-                    <Icon src={fb} />
-                    <Icon src={linkedin} />
-                    <Icon src={github} />
+                    <Icon src={fb} onClick={this.redirectTo.bind(this, 'https://www.facebook.com/nikolakriokapic')} />
+                    <Icon src={linkedin} onClick={this.redirectTo.bind(this, 'https://www.linkedin.com/in/nikolakrivokapic84/linkedin')}/>
+                    <Icon src={github} onClick={this.redirectTo.bind(this, 'https://github.com/nikolakrivokapic')}/>
                 </Icons>
                 <MenuDesktop>
                     <Flag visible={this.props.currentPage === 'home'}  onClick={this.handleClick.bind(this, 'home')}>Home</Flag>

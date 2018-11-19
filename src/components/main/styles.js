@@ -14,6 +14,10 @@ export const Container = styled.div`
         from { opacity: 0; }
         to { opacity: 1; }
     }
+    div {
+        animation: fadein 4s;
+        &:first-child { animation: none; }
+   }
 `;
 
 export const BgImage = styled.div` 
@@ -76,6 +80,7 @@ export const Icon = styled.img`
     top: 0;
     border-radius: 50%;
     margin: 5px;
+    cursor: pointer;
 `;
 
 export const MenuMobile = styled.div` 
@@ -158,7 +163,7 @@ text-transform: uppercase;
 `;
 
 export const Profile = styled.img` 
-    height: 16vmin;
+    height: 19vmin;
     filter: sepia(100%);
     cursor: pointer;
     top: 0;

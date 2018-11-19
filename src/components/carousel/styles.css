@@ -9,7 +9,6 @@
     width: 254px !important;
     height: 324px !important;
     overflow: visible !important;
-
 }
 
 .slide {
@@ -57,8 +56,8 @@ ul {
     border-bottom: 23px solid transparent !important;
 }
 
-.slide > img { background: white; padding: 10px; border-radius: 10px; }
-.thumb > img { background: white; padding: 10px; }
+.slide > img { background: transparent; padding: 5px; border-radius: 10px; }
+.thumb > img { background: transparent; padding: 10px; }
 
 .thumbs-wrapper, .thumbs {
     margin-top: 0 !important;
