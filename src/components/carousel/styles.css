@@ -56,5 +56,5 @@ ul {
     border-bottom: 23px solid transparent !important;
 }
 
-.slide > img { background: white; padding: 10px; }
+.slide > img { background: white; padding: 10px; border-radius: 10px; }
 .thumb > img { background: white; padding: 10px; }
