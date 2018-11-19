@@ -89,6 +89,7 @@ export const Icon = styled.img`
     border-radius: 50%;
     margin: 5px;
     cursor: pointer;
+    &:hover { filter: sepia(80%); }
 `;
 
 export const MenuMobile = styled.div` 
