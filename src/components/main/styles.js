@@ -14,7 +14,7 @@ export const Container = styled.div`
         from { opacity: 0; }
         to { opacity: 1; }
     }
-    div {
+    div, img {
         animation: fadein 4s;
         &:first-child { animation: none; }
    }
