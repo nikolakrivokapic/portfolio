@@ -27,7 +27,7 @@ export class Hire extends Component {
                         </Inputs>
                         <Button type="submit">Send</Button>
                     </form>
-                    <div style={{'margin-top': '15px'}}>Or contact me via:</div>
+                    <div style={{marginTop: '15px'}}>Or contact me via:</div>
                     <div>Email: nikolakrivokapic84@gmail.com</div>
                     <div>Tel: +38267220449</div>
                     <div>Skype: nikolakriokapic (no v)</div>

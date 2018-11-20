@@ -20,25 +20,34 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function init() {
-    let bg_image = new Image();
     ReactDOM.render(
         <Loading />,
         document.getElementById('root')
     );
 
-    bg_image.onload = () => {
-        ReactDOM.render(
-            <Provider store={Store.configureStore()}>
-                <Fragment>
-                    <GlobalStyle />
-                    <Main />
-                </Fragment>
-            </Provider>,
-            document.getElementById('root')
-        );
-    };
+    let assets = require.context('./assets', false, /\.(png|jpe?g|svg)$/).keys().map((item) => item.replace('./', 'assets/'));
+    let assetsProjects = require.context('./assets/projects', false, /\.(png|jpe?g|svg)$/).keys().map((item) => item.replace('./', 'assets/'));
+    let assetsSkills = require.context('./assets/skills', false, /\.(png|jpe?g|svg)$/).keys().map((item) => item.replace('./', 'assets/'));
+    let allAssets = [...assets, ...assetsProjects, ...assetsSkills];
 
-    bg_image.src = 'assets/bg.jpg';
+    allAssets.forEach((image, i) => {
+        let bg_image = new Image();
+        bg_image.src = image;
+
+        bg_image.onload = () => {
+            if(i !== allAssets.length - 1) return;
+
+            ReactDOM.render(
+                <Provider store={Store.configureStore()}>
+                    <Fragment>
+                        <GlobalStyle />
+                        <Main />
+                    </Fragment>
+                </Provider>,
+                document.getElementById('root')
+            );
+        }
+    });
 }
 
 document.addEventListener('DOMContentLoaded', init);
