@@ -49,6 +49,7 @@ export const BgImage = styled.div`
     
     @media only screen and (max-width: 767px) {
         background: url(${bg}); background-size: cover; transform: none; background-attachment: fixed; position: fixed; width: 100vw; height: 100vh;
+        background-position: center center;
     }
     
     img {
