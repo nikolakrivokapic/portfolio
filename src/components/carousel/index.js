@@ -6,7 +6,7 @@ import './styles.css';
 export default class Gallery extends Component {
     render() {
         return (
-            <Carousel className="carousel-container" transitionTime={800} showStatus={false} >
+            <Carousel className={'carousel-container ' + this.props.type} transitionTime={800} showStatus={false} >
                 {
                     this.props.images.map((image, i) => <img key={i} src={image} />)
                 }

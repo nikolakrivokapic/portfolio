@@ -13,6 +13,7 @@ export const TextArea = styled.div`
     position: relative; 
     width: 47%;
     max-width: 350px;
+    min-width: 272px;
     padding: 32px;
     font-size: 20px;
     @media only screen and (max-width: 767px) { font-size: 16px; }

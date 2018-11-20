@@ -11,6 +11,10 @@
     overflow: visible !important;
 }
 
+.carousel-container.projects > .carousel-slider {
+    height: 296px !important;
+}
+
 .slide {
     display: flex;
     justify-content: center;

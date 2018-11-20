@@ -179,7 +179,6 @@ export const Profile = styled.img`
     z-index: 2;
     margin-left: 50%;
     transform: translateX(-50%);
-    margin-top: 29px;
     &:hover { filter: sepia(0);} 
     transition: .3s ease-in-out;
     padding: 5px;
