@@ -30,12 +30,14 @@ function init() {
     let assetsSkills = require.context('./assets/skills', false, /\.(png|jpe?g|svg)$/).keys().map((item) => item.replace('./', 'assets/'));
     let allAssets = [...assets, ...assetsProjects, ...assetsSkills];
 
-    allAssets.forEach((image, i) => {
+    let count = 0;
+    allAssets.forEach((image) => {
         let bg_image = new Image();
         bg_image.src = image;
 
         bg_image.onload = () => {
-            if(i !== allAssets.length - 1) return;
+            count++;
+            if(count !== allAssets.length) return;
 
             ReactDOM.render(
                 <Provider store={Store.configureStore()}>
