@@ -15,7 +15,6 @@ import Hire from '../../components/hire';
 
 import {
     Container,
-    MenuDesktop,
     Profile,
     Icon,
     Icons,
@@ -48,13 +47,6 @@ export class MainComponent extends Component {
                     <Icon src={linkedin} onClick={this.redirectTo.bind(this, 'https://www.linkedin.com/in/nikolakrivokapic84/linkedin')}/>
                     <Icon src={github} onClick={this.redirectTo.bind(this, 'https://github.com/nikolakrivokapic')}/>
                 </Icons>
-                <MenuDesktop>
-                    <Flag visible={this.props.currentPage === 'home'}  onClick={this.handleClick.bind(this, 'home')}>Home</Flag>
-                    <Flag visible={this.props.currentPage === 'projects'} onClick={this.handleClick.bind(this, 'projects')}>Projects</Flag>
-                    <Flag visible={this.props.currentPage === 'skills'} onClick={this.handleClick.bind(this, 'skills')}>Tech-Stack</Flag>
-                    { /* <Flag visible={this.props.currentPage === 'blog'} onClick={this.handleClick.bind(this,'blog')}>Blog</Flag> */ }
-                    <Flag visible={this.props.currentPage === 'hire'} onClick={this.handleClick.bind(this,'hire')}>Hire me</Flag>
-                </MenuDesktop>
                 <MenuMobile>
                     <ul>
                         <li><a onClick={this.handleClick.bind(this, 'home')}>Home</a></li>

@@ -7,7 +7,7 @@ export const Container = styled.div`
     width: ${toggleProp('visible', 'auto', '0')}; 
     min-height: ${toggleProp('visible', '420px', '0')}; 
     height: ${toggleProp('visible', 'auto', '0')}; 
-    transition: ${toggleProp('visible', 'opacity 2s ease 0s', 'opacity 2s ease 1.8s')}; 
+    transition: ${toggleProp('visible', 'opacity 1.5s ease 0s', 'opacity 1.5s ease 0s')}; 
     div {
         &:last-child { &::after { display: none; }}
     }

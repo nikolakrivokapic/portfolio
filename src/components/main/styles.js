@@ -14,8 +14,8 @@ export const Container = styled.div`
         from { opacity: 0; }
         to { opacity: 1; }
     }
-    div, img {
-        animation: fadein 4s;
+    > div, > img {
+        animation: fadein 1.4s;
         &:first-child { animation: none; }
    }
 `;
@@ -126,13 +126,6 @@ export const MenuMobile = styled.div`
         background-color: #022E3B;
         transition: background-color 0.3s ease;
     }
-`;
-
-export const MenuDesktop = styled.div` 
-    text-align: center;
-    display: none;
-    justify-content: center;
- 
 `;
 
 export const Flag = styled.div` 
