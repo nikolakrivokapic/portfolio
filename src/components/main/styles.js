@@ -195,7 +195,7 @@ export const Flag = styled.div`
 
 export const Profile = styled.img`
   height: 19vmin;
-  filter: grayscale(80%);
+  filter: sepia(100%);
   cursor: pointer;
   top: 0;
   border-radius: 50%;
@@ -203,7 +203,7 @@ export const Profile = styled.img`
   transform: rotate(-13deg);
   z-index: 2;
   &:hover {
-    filter: grayscale(20%);
+    filter: sepia(10%);
   }
   transition: 0.3s ease-in-out;
   padding: 5px;
@@ -242,9 +242,8 @@ export const Badge = styled.div`
 
 export const Header = styled.div`
   display: flex;
-  opacity: 0.7;
   justify-content: center;
-  background: rgb(48, 51, 54);
+  background: rgb(48, 51, 54, 0.6);
 `;
 
 export const HeaderTitle = styled.div`

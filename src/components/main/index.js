@@ -52,7 +52,6 @@ export class MainComponent extends Component {
             <HeaderSmallerText>Herceg Novi, Montenegro</HeaderSmallerText>
           </HeaderTitle>
         </Header>
-
         <Icons>
           <Icon
             src={fb}
