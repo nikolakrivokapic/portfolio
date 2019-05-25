@@ -258,6 +258,10 @@ export const HeaderSmallText = styled.div`
   font-size: 15px;
 `;
 
+export const HeaderSmallerText = styled.div`
+  font-size: 12px;
+`;
+
 export const Li = styled.li`
   background: ${(props) => props.active ? '#022e3b' : 'transparent'};
 `;
