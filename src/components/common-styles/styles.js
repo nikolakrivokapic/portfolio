@@ -26,7 +26,7 @@ export const TextArea = styled.div`
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   text-align: center;
   margin: 0 auto;
-  width: ${props => (props.small ? '30%' : '60%')};
+  width: ${props => (props.small ? '470px' : '60%')};
   max-width: 700px;
   display: flex;
   justify-content: center;
@@ -38,7 +38,7 @@ export const TextArea = styled.div`
   }
   span {
     color: #17313c;
-    padding: 15px;
+    padding: 12px;
     font-size: 18px;
     line-height: 30px;
   }
