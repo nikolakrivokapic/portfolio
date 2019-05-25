@@ -20,8 +20,7 @@
         "test:watch": "jest --watchAll",
         "start": "webpack-dev-server --mode development --open --hot",
         "build": "webpack --mode production",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist"
+        "deploy": "npm run build && gh-pages -d dist"
     },
     "author": "",
     "license": "ISC",

@@ -11,9 +11,14 @@ export class Home extends Component {
             <TextArea>
                 <span>
                     {texts.text1}
+                </span>
+            </TextArea>
+            <TextArea>
+                <span>
+                    {texts.text4}
                     <a style={{color: '#022e3bc4'}} target="_blank" href="https://en.wikipedia.org/wiki/Smart_Sparrow">
                         {' '}
-              Smart Sparrow{' '}
+                      Smart Sparrow{' '}
                     </a>
                     {texts.text2}
                 </span>

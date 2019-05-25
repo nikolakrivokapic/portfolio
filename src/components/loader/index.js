@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 import {
     Container,
@@ -9,7 +9,7 @@ export default class Gallery extends Component {
     render() {
         return (
             <Container>
-                <Animation/>
+                <Animation />
             </Container>
         );
     }

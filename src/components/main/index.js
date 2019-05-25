@@ -23,6 +23,7 @@ import {
   Header,
   HeaderTitle,
   HeaderSmallText,
+  Li,
 } from './styles';
 
 export class MainComponent extends Component {
@@ -35,6 +36,8 @@ export class MainComponent extends Component {
   }
 
   render() {
+    const {currentPage} = this.props;
+
     return (
         <Container>
             <BgImage currentPage={this.props.currentPage}>
@@ -58,18 +61,18 @@ export class MainComponent extends Component {
             </Icons>
             <MenuMobile>
                 <ul>
-                    <li>
+                    <Li active={currentPage === 'home'}>
                         <a onClick={this.handleClick.bind(this, 'home')}>Home</a>
-                    </li>
-                    <li>
-                        <a onClick={this.handleClick.bind(this, 'projects')}>Projects</a>
-                    </li>
-                    <li>
+                    </Li>
+                    <Li active={currentPage === 'projects'}>
+                        <a onClick={this.handleClick.bind(this, 'projects')}>Portfolio</a>
+                    </Li>
+                    <Li active={currentPage === 'skills'}>
                         <a onClick={this.handleClick.bind(this, 'skills')}>Tech-Stack</a>
-                    </li>
-                    <li>
+                    </Li>
+                    <Li active={currentPage === 'hire'}>
                         <a onClick={this.handleClick.bind(this, 'hire')}>Hire me</a>
-                    </li>
+                    </Li>
                 </ul>
             </MenuMobile>
             <Home visible={this.props.currentPage === 'home'} />

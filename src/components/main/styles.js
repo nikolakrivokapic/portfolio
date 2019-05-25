@@ -37,7 +37,7 @@ export const BgImage = styled.div`
     font-size: calc(10px + 2vmin);
     color: white;
     transition: transform 0.7s linear;
-    transform: ${props => {
+    transform: ${(props) => {
       if (props.currentPage === 'home') {
         return 'translateY(-40%) translateX(0%)';
       } else if (props.currentPage === 'projects') {
@@ -83,6 +83,7 @@ export const Button = styled.button`
   &:focus {
     outline: none;
   }
+ 
   &:hover {
     background: #bac7dd;
   }
@@ -255,4 +256,8 @@ export const HeaderTitle = styled.div`
 
 export const HeaderSmallText = styled.div`
   font-size: 15px;
+`;
+
+export const Li = styled.li`
+  background: ${(props) => props.active ? '#022e3b' : 'transparent'};
 `;

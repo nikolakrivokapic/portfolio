@@ -25,19 +25,24 @@ function init() {
         document.getElementById('root')
     );
 
-    let assets = require.context('./assets', false, /\.(png|jpe?g|svg)$/).keys().map((item) => item.replace('./', 'assets/'));
-    let assetsProjects = require.context('./assets/projects', false, /\.(png|jpe?g|svg)$/).keys().map((item) => item.replace('./', 'assets/'));
-    let assetsSkills = require.context('./assets/skills', false, /\.(png|jpe?g|svg)$/).keys().map((item) => item.replace('./', 'assets/'));
-    let allAssets = [...assets, ...assetsProjects, ...assetsSkills];
+    const assets = require.context('./assets', false, /\.(png|jpe?g|svg)$/).keys()
+.map((item) => item.replace('./', 'assets/'));
+    const assetsProjects = require.context('./assets/projects', false, /\.(png|jpe?g|svg)$/).keys()
+.map((item) => item.replace('./', 'assets/'));
+    const assetsSkills = require.context('./assets/skills', false, /\.(png|jpe?g|svg)$/).keys()
+.map((item) => item.replace('./', 'assets/'));
+    const allAssets = [...assets, ...assetsProjects, ...assetsSkills];
 
     let count = 0;
+
     allAssets.forEach((image) => {
-        let bg_image = new Image();
+        const bg_image = new Image();
+
         bg_image.src = image;
 
         bg_image.onload = () => {
             count++;
-            if(count !== allAssets.length) return;
+            if (count !== allAssets.length) { return; }
 
             ReactDOM.render(
                 <Provider store={Store.configureStore()}>
@@ -48,7 +53,7 @@ function init() {
                 </Provider>,
                 document.getElementById('root')
             );
-        }
+        };
     });
 }
 

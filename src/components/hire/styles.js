@@ -36,7 +36,6 @@ export const Inputs = styled.div`
     margin: 0 10px;
 `;
 
-
 export const Input = styled.input`
     background: transparent;
     border: 0;
@@ -52,7 +51,6 @@ export const Input = styled.input`
     padding-bottom: 10px;
     width: 100%;
 `;
-
 
 export const InputWrapper = styled.div`
     margin-top: 15px;
@@ -75,9 +73,4 @@ export const Button = styled.button`
     &:hover { background: #022E3B; }
     transition: background 0.3s ease;
 `;
-
-
-
-
-
 
