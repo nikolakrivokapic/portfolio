@@ -81,7 +81,7 @@ export class MainComponent extends Component {
               <a onClick={this.handleClick.bind(this, 'skills')}>Tech-Stack</a>
             </Li>
             <Li active={currentPage === 'hire'}>
-              <a onClick={this.handleClick.bind(this, 'hire')}>Hire me</a>
+              <a onClick={this.handleClick.bind(this, 'hire')}>Contact</a>
             </Li>
           </ul>
         </MenuMobile>
