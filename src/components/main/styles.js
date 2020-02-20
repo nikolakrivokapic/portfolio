@@ -136,7 +136,7 @@ export const MenuMobile = styled.div`
 
   li a:hover {
     background-color: #022e3b;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease;
   }
 `;
 
@@ -194,18 +194,17 @@ export const Flag = styled.div`
 `;
 
 export const Profile = styled.img`
-  height: 19vmin;
-  filter: sepia(100%);
-  cursor: pointer;
+  height: 16vmin;
+  filter: brightness(1.15);
   top: 0;
   border-radius: 50%;
   margin-bottom: 15px;
-  transform: rotate(-13deg);
+  transform: rotate(-11deg);
   z-index: 2;
   &:hover {
-    filter: sepia(10%);
+    filter: sepia(80%);
   }
-  transition: 0.3s ease-in-out;
+  transition: 0.1s ease-in-out;
   padding: 5px;
   background-color: #4984af8c;
   margin: 10px 0 10px 0;
