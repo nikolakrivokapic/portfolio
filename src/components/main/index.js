@@ -28,11 +28,18 @@ import {
 } from './styles';
 
 export class MainComponent extends Component {
+  componentDidMount() {
+    this.checkExistButtonLinkedin();
+  }
+
   handleClick(page) {
     this.props.setCurrentPage(page);
   }
 
-  redirectTo(page) {
+  redirectTo(e, page) {
+    if (!e.target.className.match(/LI-view-profile/)) {
+      return;
+    }
     window.open(page, '_blank');
   }
 
@@ -89,7 +96,7 @@ export class MainComponent extends Component {
         <Projects visible={this.props.currentPage === 'projects'} />
         <Skills visible={this.props.currentPage === 'skills'} />
         <Hire visible={this.props.currentPage === 'hire'} />
-        <Badge onClick={() => this.redirectTo('https://www.linkedin.com/in/nikolakrivokapic84')}>
+        <Badge onClick={e => this.redirectTo(e, 'https://www.linkedin.com/in/nikolakrivokapic84')}>
           <div
             className="LI-profile-badge"
             data-version="v1"
@@ -110,6 +117,22 @@ export class MainComponent extends Component {
       </Container>
     );
   }
+
+  checkExistButtonLinkedin() {
+    const int = setInterval(function() {
+      if (document.getElementsByClassName('LI-view-profile').length) {
+        const els = document.getElementsByClassName('LI-view-profile');
+        for (let item of els) {
+          item.removeAttribute('href');
+        }
+        clearInterval(int);
+      }
+    }, 100);
+
+    setTimeout(() => {
+      clearInterval(int);
+    }, 5000);
+  } // check every 100ms
 }
 
 const mapStateToProps = state => ({

@@ -228,15 +228,14 @@ export const Badge = styled.div`
     pointer-events: none;
   }
   div {
-    cursor: pointer;
     box-shadow: none !important;
-    &:hover {
-      .LI-name {
-        a {
-          color: #008cc9 !important;
-        }
-      }
-    }
+  }
+  .LI-more-info {
+    display: none; 
+  }
+  .LI-view-profile {
+    cursor: pointer;
+    pointer-events: all !important;
   }
 `;
 
