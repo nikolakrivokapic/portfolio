@@ -236,6 +236,7 @@ export const Badge = styled.div`
     cursor: pointer;
     pointer-events: all !important;
   }
+  .LI-simple-link { display: none; }
 `;
 
 export const Header = styled.div`
