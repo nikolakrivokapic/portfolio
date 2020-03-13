@@ -1,5 +1,5 @@
 export default {
-  text1: `Hello, my name is Nikola Krivokapic and I am Montenegro based software developer, mainly focused on full stack web development. 
+  text1: `I am software developer, mainly focused on full stack web development. 
      I have around 8 years of professional experience, working mostly remotely as part of the agile teams. 
      Currently, I am owner of legal entity "Bokasoft" under which I work as a contractor for various renowned international clients.`,
   text2: `, I have been working on browser simulations for various academic institutions 
