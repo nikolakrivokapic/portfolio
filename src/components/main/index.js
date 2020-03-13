@@ -36,10 +36,13 @@ export class MainComponent extends Component {
     this.props.setCurrentPage(page);
   }
 
-  redirectTo(e, page) {
-    if (!e.target.className.match(/LI-view-profile/)) {
-      return;
+  onBadgeClick(e, page) {
+    if (e.target || e.target.className.match(/LI-view-profile/)) {
+      window.open(page, '_blank');
     }
+  }
+
+  goTo(page) {
     window.open(page, '_blank');
   }
 
@@ -62,18 +65,17 @@ export class MainComponent extends Component {
         <Icons>
           <Icon
             src={fb}
-            onClick={this.redirectTo.bind(this, 'https://www.facebook.com/nikolakriokapic')}
+            onClick={() => this.goTo('https://www.facebook.com/nikolakriokapic')}
           />
           <Icon
             src={linkedin}
-            onClick={this.redirectTo.bind(
-              this,
+            onClick={() => this.goTo(
               'https://www.linkedin.com/in/nikolakrivokapic84/linkedin'
             )}
           />
           <Icon
             src={github}
-            onClick={this.redirectTo.bind(this, 'https://github.com/nikolakrivokapic')}
+            onClick={() => this.goTo('https://github.com/nikolakrivokapic') }
           />
         </Icons>
         <MenuMobile>
@@ -96,7 +98,7 @@ export class MainComponent extends Component {
         <Projects visible={this.props.currentPage === 'projects'} />
         <Skills visible={this.props.currentPage === 'skills'} />
         <Hire visible={this.props.currentPage === 'hire'} />
-        <Badge onClick={e => this.redirectTo(e, 'https://www.linkedin.com/in/nikolakrivokapic84')}>
+        <Badge onClick={e => this.onBadgeClick(e, 'https://www.linkedin.com/in/nikolakrivokapic84')}>
           <div
             className="LI-profile-badge"
             data-version="v1"
