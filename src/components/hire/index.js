@@ -9,9 +9,7 @@ export class Hire extends Component {
     return (
         <Container visible={this.props.visible}>
             <TextArea>
-                <span>I am available for freelance/contracting work.</span>
-                <br />
-                <span>Write me a message, I want to hear about your project.</span>
+                <span>If you want to get touch with me, feel free to do so.</span>
                 <form action="https://formspree.io/nikolakrivokapic84@gmail.com" method="POST">
                     <Inputs>
                         <InputWrapper>
